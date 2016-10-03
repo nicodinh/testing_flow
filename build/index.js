@@ -1,11 +1,16 @@
-// @flow
+var pizzas = [{ title: 'Margherita', vegetarian: true }, { title: 'Pepperoni', vegetarian: false }, { title: 'Four cheese', vegetarian: true }, { title: 'Hawaiian', vegetarian: false }];
 
-
-function multPI(num1, num2) {
-  return Math.PI * num1 * num2;
+function vegetarianPizzas() {
+  return _.findWhere(pizzas, { vegetarian: true });
 }
-var x = multPI(3, '0');
-console.log(x);
+
+console.log(vegetarianPizzas());
+
+// function multPI(num1, num2) {
+//   return Math.PI * num1 * num2;
+// }
+// var x = multPI(3, '0');
+// console.log(x);
 
 // function add(num1:number, num2:string): string {
 //   return num1 + num2;
