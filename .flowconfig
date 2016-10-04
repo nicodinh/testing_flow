@@ -1,5 +1,9 @@
 [libs]
 ./src/interfaces/
 
+[include]
+
 [ignore]
 .*/node_modules/*
+
+[options]
