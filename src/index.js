@@ -27,8 +27,9 @@ const pizzas = [
 
 function vegetarianPizzas() {
   return _.findWhere(pizzas, {
-    vegetarian: true
+    vegetarian: false
   });
 }
 
+console.log(vegetarianPizzas());
 console.log(vegetarianPizzas());
