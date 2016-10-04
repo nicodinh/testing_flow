@@ -11,5 +11,4 @@ declare module 'underscore' {
     findWhere<T>(list: Array<T>, properties: {[key:string]: any}): ?T;
   }
   declare var _: Underscore;
-
 }

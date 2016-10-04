@@ -22,14 +22,15 @@ const pizzas = [
   {
     title: 'Hawaiian',
     vegetarian: false
-  },
+  }
 ];
 
-function vegetarianPizzas() {
+function vegetarianPizzas(vegetarian:boolean) {
   return _.findWhere(pizzas, {
-    vegetarian: false
+    vegetarian: vegetarian
   });
 }
 
-console.log(vegetarianPizzas());
-console.log(vegetarianPizzas());
+console.log(vegetarianPizzas(true));
+console.log(vegetarianPizzas(false));
+//console.log(vegetarianPizzas()); --> undefined
