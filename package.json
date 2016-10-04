@@ -9,6 +9,7 @@
     "flow-bin": "^0.33.0"
   },
   "dependencies": {
+    "koa": "^1.2.4",
     "underscore": "^1.8.3"
   }
 }
